@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: sdown-app
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python sdown1.py
