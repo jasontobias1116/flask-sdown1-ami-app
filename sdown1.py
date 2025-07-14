@@ -1,5 +1,5 @@
-from flask import Flask, request, send_file, abort
-import shotgun_api3
+from flask import Flask, request, send_file
+from shotgun_api3 import Shotgun
 import requests
 from io import BytesIO
 from zipfile import ZipFile
@@ -14,7 +14,7 @@ SCRIPT_NAME = "python_script_one"
 SCRIPT_KEY = "ksoaxey(d9ynAruumhkccqebr"
 
 # --- CONNECT TO SHOTGRID ---
-sg = shotgun_api3.Shotgun(SERVER_PATH, SCRIPT_NAME, SCRIPT_KEY)
+sg = Shotgun(SERVER_PATH, SCRIPT_NAME, SCRIPT_KEY)
 
 # --- HEALTH CHECK ROUTE ---
 @app.route("/", methods=["GET"])

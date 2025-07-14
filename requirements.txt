@@ -1,4 +1,3 @@
-six==1.17.0
 blinker==1.9.0
 certifi==2025.6.15
 charset-normalizer==3.4.2
@@ -10,6 +9,6 @@ Jinja2==3.1.6
 MarkupSafe==3.0.2
 requests==2.32.4
 setuptools==80.9.0
-git+https://github.com/shotgunsoftware/python-api.git@7b392bde6ec033e4a1c5749117fc47214e246380
+six==1.17.0
 urllib3==2.5.0
 Werkzeug==3.1.3
