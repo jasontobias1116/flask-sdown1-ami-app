@@ -5,6 +5,7 @@ from io import BytesIO
 from zipfile import ZipFile
 from urllib.parse import urlparse, unquote
 import re
+import os
 
 app = Flask(__name__)
 
@@ -89,5 +90,7 @@ def download_shot_assets():
         download_name=f"shot_{shot_id}_assets.zip"
     )
 
+
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=True, host="0.0.0.0", port=port)
