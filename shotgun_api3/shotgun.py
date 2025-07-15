@@ -34,7 +34,7 @@ from .lib import six
 from .lib import sgsix
 from .lib import sgutils
 from .lib.six import BytesIO  # used for attachment upload
-from .lib.six.moves import map
+from shotgun_api3.lib.six.moves import map
 
 from .lib.six.moves import http_cookiejar  # used for attachment upload
 import datetime

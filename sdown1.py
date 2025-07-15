@@ -6,6 +6,10 @@ from zipfile import ZipFile
 from urllib.parse import urlparse, unquote
 import re
 import os
+import sys
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+
+
 
 app = Flask(__name__)
 
